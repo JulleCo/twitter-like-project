@@ -1,0 +1,242 @@
+#connexion{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height:100vh;
+
+    &_left{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        height: 100%;
+
+        &_top{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 20%;
+            border-bottom: $border-ok;
+            // background-color: green;
+
+
+            &_left{
+                width : 30%;
+                height: 100%;
+                background-color: $color-yellow;
+                border-right: $border-ok;
+            }
+
+            &_right{
+                display: flex;
+                align-items: center;
+                width : 70%;
+                height: 100%;
+                font-size: xx-large;
+                text-align: center;
+                margin: 0;
+                // background-color: hotpink;
+            }
+        }
+
+        &_middle{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 65%;
+
+            &_left{
+                width: 60%;
+                height: 100%;
+                border-right: $border-ok;
+                // background-color: indigo;
+            }
+
+            &_right{
+                width: 40%;
+                height: 25%;
+                border-bottom: $border-ok;
+                background-color: $color-red;
+            }
+        }
+
+        &_bottom{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 15%;
+            background-color: $color-blue;
+            border-top:$border-ok ;
+            border-bottom:$border-ok ;
+        }
+    }
+
+    &_middle{
+        display: flex;
+        flex-direction: column;
+        width:9%;
+
+        &_top{
+            width: 6rem;
+            height: 22rem;
+            border-left: $border-ok;
+            border-right: $border-ok;
+        }
+
+        &_middle{
+            width: 6rem;
+            height: 6rem;
+            border: $border-ok;
+            background-color: $color-yellow;
+        }
+
+        &_bottom{
+            width: 6rem;
+            height: 14rem;
+            border-left: $border-ok;
+            border-right: $border-ok;
+            border-bottom: $border-ok;
+        }
+    }
+
+    &_right{
+        display: flex;
+        flex-direction: column;
+        width: 66%;
+        // background-color: lightcoral;
+
+        &_top{
+            display: flex;
+            flex-direction: column;
+            width:100%;
+
+            &_top{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 4.5rem;
+                background-color: $color-red;
+                border-top: $border-ok;
+                border-right: $border-ok;
+                border-bottom: $border-ok;
+                
+            }
+
+            &_middle{
+                display: flex;
+                flex-direction: row;
+                &_left{
+                    width: 85%;
+                    height: 4.5rem;
+                    border-bottom: $border-ok;
+                }
+                &_right{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 15%;
+                    height: 4.5rem;
+                    border-left: $border-ok;
+                    border-bottom: $border-ok;
+                    border-right: $border-ok;
+                    background-color: $color-yellow;
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.5;
+                    }
+                    &_link{
+                        text-decoration: none;
+                        font-size: x-large;
+                        color: black;
+                        text-align: center;
+                        // background-color: $color-blue;
+                        
+                    }
+                
+                }
+            }
+
+            &_bottom{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+
+                &_left{
+                    width: 85%;
+                    height: 6rem;
+                    background-color: $color-blue;
+                    border-bottom: $border-ok;
+                    color: white;
+                    text-align: center;
+                    font-size: xx-large;
+                    // padding-top: 1.2vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &_right{
+                    width: 15%;
+                    height: 6rem;
+                    border-left: $border-ok;
+                    border-bottom: $border-ok;
+                    border-right: $border-ok;
+                }
+            }
+        }
+
+        &_middle{
+            display: flex;
+            flex-direction: row;
+
+            &_left{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                flex-direction: column;
+                width: 85%;
+                height: 100%;                  
+
+                    &_email, &_password{
+                        width: 80%;
+                        height: 11%;
+                        margin-bottom: 11%;
+                        color: #16829C;
+                        font-size: large;
+                        border-color: #16829C;
+                    }
+
+                    &_button{                       
+                        height: 15%;
+                        width: 100%;
+                        background-color: $color-red;
+                        color: white;
+                        font-size: xx-large;
+                        border-top: $border-ok;
+                        border-left: none;
+                        border-right: none;
+                        border-bottom: $border-ok;
+                        cursor: pointer;
+                        &:hover {
+                            opacity: 0.5;
+                            cursor: pointer;
+                        }
+                    }
+            }
+
+            &_right{
+                height: 23rem;
+                width: 15%;
+                border-right: $border-ok;
+                border-left: $border-ok;
+                border-bottom: $border-ok;
+            }
+        }
+
+        &_bottom{
+            width: 15%;
+            height: 100%;
+            background-color: $color-yellow;
+            border-right: $border-ok;
+            border-bottom: $border-ok;            
+        }
+    }
+}
