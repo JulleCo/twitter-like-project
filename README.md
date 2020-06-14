@@ -13,5 +13,5 @@ Pour faire fonctionner le projet : <br>
 <br>
 
 <img src='img/Screenshot_accueil.png'>
-<img src='img/Screenshot_fil_actu.png'>
-<img src='img/screenshot_profil.png'>
+<img src='img/screenshot_fil_actu.png'>
+<img src='img/Screenshot_profil.png'>
