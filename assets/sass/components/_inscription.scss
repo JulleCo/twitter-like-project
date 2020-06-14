@@ -53,8 +53,9 @@
 
             &_right{
                 height: 40%;
-                width: 100%;
+                width: auto;
                 border-bottom: $border-ok;
+                padding: 14%;
                 // border: solid hotpink;
 
                 &_image{
@@ -127,11 +128,25 @@
                     border-bottom: $border-ok;
                 }
                 &_right{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     width: 15%;
                     height: 4.5rem;
                     border-left: $border-ok;
                     border-bottom: $border-ok;
                     border-right: $border-ok;
+                    background-color: $color-yellow;
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.7;
+                    }
+                    &_link{
+                        text-decoration: none;
+                        font-size: x-large;
+                        color: black;
+                        text-align: center;
+                    }
                 }
             }
 
@@ -191,6 +206,10 @@
                         font-size: xx-large;
                         border: $border-ok;
                         cursor: pointer;
+                        &:hover {
+                            cursor: pointer;
+                            opacity: 0.75;
+                        }
                     }
             }
 

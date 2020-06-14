@@ -387,8 +387,9 @@ body input {
 }
 #inscription_left_middle_right {
   height: 40%;
-  width: 100%;
+  width: auto;
   border-bottom: solid medium black;
+  padding: 14%;
 }
 #inscription_left_middle_right_image {
   height: 100%;
@@ -451,11 +452,25 @@ body input {
   border-bottom: solid medium black;
 }
 #inscription_right_top_middle_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 15%;
   height: 4.5rem;
   border-left: solid medium black;
   border-bottom: solid medium black;
   border-right: solid medium black;
+  background-color: #FBD531;
+}
+#inscription_right_top_middle_right:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+#inscription_right_top_middle_right_link {
+  text-decoration: none;
+  font-size: x-large;
+  color: black;
+  text-align: center;
 }
 #inscription_right_top_bottom {
   display: flex;
@@ -508,6 +523,10 @@ body input {
   font-size: xx-large;
   border: solid medium black;
   cursor: pointer;
+}
+#inscription_right_middle_left_button:hover {
+  cursor: pointer;
+  opacity: 0.75;
 }
 #inscription_right_middle_right {
   height: 25rem;
@@ -589,19 +608,16 @@ body input {
   width: 9%;
 }
 #connexion_middle_top {
-  width: 6rem;
   height: 22rem;
   border-left: solid medium black;
   border-right: solid medium black;
 }
 #connexion_middle_middle {
-  width: 6rem;
   height: 6rem;
   border: solid medium black;
   background-color: #FBD531;
 }
 #connexion_middle_bottom {
-  width: 6rem;
   height: 14rem;
   border-left: solid medium black;
   border-right: solid medium black;
@@ -649,7 +665,7 @@ body input {
 }
 #connexion_right_top_middle_right:hover {
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 #connexion_right_top_middle_right_link {
   text-decoration: none;
@@ -714,7 +730,7 @@ body input {
   cursor: pointer;
 }
 #connexion_right_middle_left_button:hover {
-  opacity: 0.5;
+  opacity: 0.75;
   cursor: pointer;
 }
 #connexion_right_middle_right {
@@ -1012,6 +1028,31 @@ body {
   background-color: white;
   grid-column: 4/5;
   grid-row: 7/8;
+}
+
+body #error {
+  margin: 0;
+  background-color: rgba(128, 128, 128, 0.295);
+}
+
+#error {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#error_oops {
+  margin-bottom: 2%;
+  color: #FBD531;
+  font-size: 4rem;
+}
+#error_path {
+  color: #DD0000;
+}
+#error_back a {
+  text-decoration: none;
+  color: #0F15A7;
 }
 
 /*# sourceMappingURL=home.css.map */

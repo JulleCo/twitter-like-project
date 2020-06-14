@@ -13,20 +13,15 @@ exports.add = (request, response) => {
 };
 
 exports.findInfo = (request, response) => {
-  // response.render("tweetactu")
   // console.log('user:',request.user)
   User.getInfo(request.user.userId, (error,data) => {
     console.log(data)
         if (error) {
         response.status(500).send(error.message);
-        }
-
-        // response.render("/tweetactu", { tweet });
-        
+        }        
         response.render("profil",{
           userName:data.userName,
           userPseudo:data.userPseudo
-          // tweetDate:"31/05/2020",
        
         });
       

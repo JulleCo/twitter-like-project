@@ -1,0 +1,25 @@
+body #error {
+    margin:0;
+    background-color: rgba(128, 128, 128, 0.295);
+}
+#error{
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_oops{
+        margin-bottom: 2%;
+        color: $color-yellow;
+        font-size: 4rem;
+    }
+    &_path{
+        color: $color-red;
+    }
+    &_back{
+        & a{
+            text-decoration: none;
+            color: $color-blue;
+        }
+    }
+}
