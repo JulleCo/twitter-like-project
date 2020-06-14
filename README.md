@@ -12,6 +12,6 @@ Pour faire fonctionner le projet : <br>
 • Passer la commande > "nodemon server.js" pour lancer le localhost:8080<br>
 <br>
 
-<img src'img/Screenshot_accueil.png'>
-<img src'img/Screenshot_fil_actu.png'>
-<img src'img/Screenshot_profil.png'>
+<img src='img/Screenshot_accueil.png'>
+<img src='img/Screenshot_fil_actu.png'>
+<img src='img/Screenshot_profil.png'>
